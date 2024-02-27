@@ -1,0 +1,104 @@
+% \renewcommand{\maketitle}{
+%     \pagestyle{plain}
+%     \pagenumbering{gobble}
+%     \makeatletter
+%     \IfStrEqCase{\HGP@mode}{
+%         {translation}{
+%         }
+%         {proposal}{
+%         }
+%         {thesis}{
+%             \includepdf[pagecommand={
+%                 \def\midX{7.85}
+%                 \def\dateY{-21.81}
+%                 \begin{tikzpicture}
+%                     [remember picture, overlay]\node at (6.48,-8.1) {\zihao{2}\heiti\@title};
+%                     [remember picture, overlay]\node at (\midX,-13.06) {\zihao{3}\@school};
+%                     [remember picture, overlay]\node at (\midX,-14.56) {\zihao{3}\@classnum};
+%                     [remember picture, overlay]\node at (\midX,-16.06) {\zihao{3}\@author};
+%                     [remember picture, overlay]\node at (\midX,-17.56) {\zihao{3}\@stunum};
+%                     [remember picture, overlay]\node at (\midX,-19.06) {\zihao{3}\@instructor};
+%                     [remember picture, overlay]\node at (4.95,\dateY) {\zihao{3}\number\year};
+%                     [remember picture, overlay]\node at (6.65,\dateY) {\zihao{3}06};
+%                     [remember picture, overlay]\node at (8.06,\dateY) {\zihao{3}01};
+%                 \end{tikzpicture}
+%             }]{template/cover/thesis.pdf}
+%             \clearpage\,\clearpage
+%         }
+%     }
+%     \pagestyle{fancy}
+% }
+
+\renewcommand{\maketitle}{
+    \pagestyle{plain}
+    \pagenumbering{gobble}
+    \makeatletter
+    \begin{titlepage}
+        \centering
+        \vspace*{-0.1cm}
+         \IfStrEqCase{\HGP@mode}{
+            {translation}{
+                
+            }
+            {proposal}{
+                
+            }
+            {thesis}{
+                
+            }
+            {graduatereport}{
+                \begin{flushright}
+                    \begin{tabular}[c]{|p{20mm}|p{50mm}|}
+                    \hline
+                    分数 &    \\
+                    \hline
+                    评卷人 &   \\
+                    \hline
+                    \end{tabular} \\ [2em]
+                \end{flushright}
+            }
+        }
+        \includegraphics[height=1.42cm]{template/cover/logo.eps}\\[5em]
+        \IfStrEqCase{\HGP@mode}{
+            {translation}{
+                {\zihao{2}\songti\bfseries 本科生毕业设计（论文）参考文献译文}\\[6em]
+                \begin{tabular}{p{6em}p{9cm}}
+                    \zihao{3} 译文出处： & \zihao{5}\textit{\@title} \\
+                \end{tabular}\\[3em]
+            }
+            {proposal}{
+                {\zihao{2}\songti\bfseries 本科生毕业设计（论文）开题报告}\\[6em]
+                {\zihao{3}\songti 题目：\@title}\\[7em]
+            }
+            {thesis}{
+                {\zihao{-0}\songti\bfseries 本科生毕业设计}\\[6em]
+                {\zihao{2}\heiti\@title}\\[7em]
+            }
+            {graduatereport}{
+                {\zihao{-0}\songti\bfseries 研究生课程报告}\\[5em]
+                {\zihao{2}\heiti\@title}\\[6em]
+            }
+        }
+        \zihao{4}
+        \begin{tabular}{p{4em}p{11em}<{\centering}}
+            
+            学\hfill 号 & \@stunum \\ \cline{2-2} \\[-1.2em]
+            姓\hfill 名 & \@author \\ \cline{2-2} \\[-1.2em]
+            指导教师 & \@instructor \\ \cline{2-2} \\[-1.2em]
+            专\hfill 业 & \@classnum \\ \cline{2-2} \\[-1.2em]
+            院\hfill 系 & \@school \\ \cline{2-2} 
+            
+            
+        \end{tabular} \\[3.5em]
+        \IfStrEqCase{\HGP@mode}{
+            {thesis}{\number\year 年 06 月 01 日}
+            {proposal}{\number\year 年 02 月}
+            {translation}{\number\year 年 02 月}
+            {graduatereport}{\@date}
+        }\\
+    \end{titlepage}
+    %\includepdf[pages=2]{template/cover/\HGP@mode.pdf}
+    \clearpage
+    \pagestyle{fancy}
+    \pagenumbering{arabic}
+}

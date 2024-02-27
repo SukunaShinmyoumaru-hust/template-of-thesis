@@ -1,0 +1,33 @@
+% 供参考，可删
+
+%==================== 引用 ====================%
+\newcommand{\sectionid}{}
+\newcommand{\mlbl}[1]{\label{\sectionid-#1}}
+\newcommand{\mref}[2][\sectionid]{\autoref{#1-#2}}
+
+
+%==================== 数学 ====================%
+\newcommand{\Sufficiency}{\noindent\textit{充分性.\ \ }}
+\newcommand{\Necessity}{\noindent\textit{必要性.\ \ }}
+
+\newcommand{\Prob}[1]{\textsc{#1}}
+\newcommand{\Cls}[1]{\textsf{#1}}
+
+\newcommand{\e}{\mathrm{e}}
+\newcommand{\N}{\mathbb{N}}
+\newcommand{\R}{\mathbb{R}}
+\newcommand{\rarr}{\rightarrow}
+\newcommand{\Rarr}{\Rightarrow}
+\DeclareMathOperator{\poly}{poly}
+
+\usepackage{amsmath,amssymb}    % AMSLaTeX宏包 用来排出更加漂亮的公式
+\makeatletter
+\renewcommand\normalsize{%
+ \abovedisplayskip 1\p@ \@plus1\p@ \@minus6\p@
+ \abovedisplayshortskip \z@ \@plus3\p@
+ \belowdisplayshortskip 3\p@ \@plus3\p@ \@minus3\p@
+ \belowdisplayskip \abovedisplayskip
+ \let\@listi\@listI}
+\makeatother
+
+
