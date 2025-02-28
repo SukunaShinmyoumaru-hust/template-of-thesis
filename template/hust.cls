@@ -271,10 +271,40 @@
     circle (.45em) node {\makebox[1em][c]{\small #1}};}}
 \robustify{\circled}
 
-\setenumerate[1]{label=(\arabic*)}
-\setenumerate[2]{label=\circled{\arabic*}}
-\setenumerate[3]{label=\Alph*.}
-
+\setenumerate[1]{
+    label=(\arabic*),
+    itemsep=0pt,
+    partopsep=0pt,
+    parsep=0pt,
+    topsep=0pt
+}
+\setenumerate[2]{
+    label=\circled{\arabic*},
+    itemsep=0pt,
+    partopsep=0pt,
+    parsep=0pt,
+    topsep=0pt
+}
+\setenumerate[3]{
+    label=\Alph*.,
+    itemsep=0pt,
+    partopsep=0pt,
+    parsep=0pt,
+    topsep=0pt
+}
+\setitemize{
+    label=\textbullet,
+    itemsep=0pt,
+    partopsep=0pt,
+    parsep=0pt,
+    topsep=0pt
+}
+\setdescription{
+    itemsep=0pt,
+    partopsep=0pt,
+    parsep=0pt,
+    topsep=0pt
+}
 
 
 %==================== 代码格式 ====================%
@@ -294,7 +324,7 @@
 }
 
 %================== tikz & plots ==================%
-\pgfplotsset{compat=1.18}
+\pgfplotsset{compat=1.17}
 \usetikzlibrary{quotes,angles}
 \usetikzlibrary{shapes,arrows,positioning}
 
@@ -358,13 +388,13 @@
     \label{fig:#1}
   \end{figure}
 }
-\usepackage{paralist}
-\let\itemize\compactitem
-\let\enditemize\endcompactitem
-\let\enumerate\compactenum
-\let\endenumerate\endcompactenum
-\let\description\compactdesc
-\let\enddescription\endcompactdesc
+% \usepackage{paralist}
+% \let\itemize\compactitem
+% \let\enditemize\endcompactitem
+% \let\enumerate\compactenum
+% \let\endenumerate\endcompactenum
+% \let\description\compactdesc
+% \let\enddescription\endcompactdesc
 \tolerance=1
 \emergencystretch=\maxdimen
 \hyphenpenalty=10000

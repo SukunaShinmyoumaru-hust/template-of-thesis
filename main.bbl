@@ -1,0 +1,68 @@
+% $ biblatex auxiliary file $
+% $ biblatex bbl format version 3.1 $
+% Do not modify the above lines!
+%
+% This is an auxiliary file used by the 'biblatex' package.
+% This file may safely be deleted. It will be recreated by
+% biber as required.
+%
+\begingroup
+\makeatletter
+\@ifundefined{ver@biblatex.sty}
+  {\@latex@error
+     {Missing 'biblatex' package}
+     {The bibliography requires the 'biblatex' package.}
+      \aftergroup\endinput}
+  {}
+\endgroup
+
+
+\refsection{0}
+  \datalist[entry]{none/global//global/global}
+    \entry{张立先2011数控机床高速微线段插补算法与自适应前瞻处理}{article}{}
+      \name{author}{4}{}{%
+        {{hash=9240acf3eafe486c059aa6558bfc0aed}{%
+           family={张立先},
+           familyi={张\bibinitperiod}}}%
+        {{hash=8c4ecb1225f11215d350bd895b6c42f8}{%
+           family={孙瑞勇},
+           familyi={孙\bibinitperiod}}}%
+        {{hash=257993f2d0415a6e0296976d9d1b8049}{%
+           family={高小山},
+           familyi={高\bibinitperiod}}}%
+        {{hash=8422e6fa2d2c53a88a8162f599865b4e}{%
+           family={李洪波},
+           familyi={李\bibinitperiod}}}%
+      }
+      \list{language}{1}{%
+        {chinese}%
+      }
+      \strng{namehash}{c888bd007659ed889e5cf1ecf320284a}
+      \strng{fullhash}{b6d449f9c177d91fe0127f810718e618}
+      \strng{bibnamehash}{994629e36a871a0da55f0a953c1155d3}
+      \strng{authorbibnamehash}{994629e36a871a0da55f0a953c1155d3}
+      \strng{authornamehash}{c888bd007659ed889e5cf1ecf320284a}
+      \strng{authorfullhash}{b6d449f9c177d91fe0127f810718e618}
+      \field{sortinit}{1}
+      \field{sortinithash}{4f6aaa89bab872aa0999fec09ff8e98a}
+      \field{labelnamesource}{author}
+      \field{labeltitlesource}{title}
+      \field{journaltitle}{中国科学：技术科学}
+      \field{langid}{english}
+      \field{lansortorder}{1}
+      \field{number}{6}
+      \field{title}{数控机床高速微线段插补算法与自适应前瞻处理}
+      \field{usera}{J}
+      \field{userd}{chinese}
+      \field{userf}{chinese}
+      \field{volume}{41}
+      \field{year}{2011}
+      \field{dateera}{ce}
+      \field{pages}{16}
+      \range{pages}{1}
+      \keyw{张立先2011数控机床高速微线段插补算法与自适应前瞻处理}
+    \endentry
+  \enddatalist
+\endrefsection
+\endinput
+
