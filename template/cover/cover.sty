@@ -82,16 +82,18 @@
         \zihao{4}
         \begin{tabular}{p{4em}p{11em}<{\centering}}
             
-            学\hfill 号 & \@stunum \\ \cline{2-2} \\[-1.2em]
+            院\hfill 系 & \@school \\ \cline{2-2} \\[-1.2em] 
+            专业班级 & \@classnum \\ \cline{2-2} \\[-1.2em] 
             姓\hfill 名 & \@author \\ \cline{2-2} \\[-1.2em]
+            学\hfill 号 & \@stunum \\ \cline{2-2} \\[-1.2em]
             指导教师 & \@instructor \\ \cline{2-2} \\[-1.2em]
-            专\hfill 业 & \@classnum \\ \cline{2-2} \\[-1.2em]
-            院\hfill 系 & \@school \\ \cline{2-2} 
+            
+            
             
             
         \end{tabular} \\[3.5em]
         \IfStrEqCase{\HGP@mode}{
-            {thesis}{\number\year 年 06 月 01 日}
+            {thesis}{\@date}
             {proposal}{\number\year 年 02 月}
             {translation}{\number\year 年 02 月}
             {graduatereport}{\@date}

@@ -1,26 +1,23 @@
-\documentclass[thesis,biblatex]{template/hust}           % 毕业论文
-% \documentclass[graduatereport,biblatex]{template/hust} % 研究生实验报告
-% \documentclass[proposal,biblatex]{template/hust}       % 开题报告
-% \documentclass[translation,biblatex]{template/hust}    % 文献翻译
+\documentclass[thesis,biblatex]{template/hust}
 
-\addbibresource{ref.bib}      % 不用 biblatex 就注释掉
+\addbibresource{ref.bib}
 \usepackage{macros}
 \usepackage{booktabs}
 
 \title{这是标题这是标题这是标题}
-%\title{Design and Implementation of Robot Navigation Algorithm Based on Look Ahead Technology}
 
-\author{泉此方}
-\school{计算机科学与技术学院}
-\classnum{计算机科学与技术}
-\stunum{U202012345}
-\instructor{长门有希}
-\date{2024年5月28日}
+\author{岳云鹏}
+\school{计算机科学与技术}
+\classnum{计科 2104}
+\stunum{U202112345}
+\instructor{郭德纲}
+\date{2025年13月32日}
 
 
 % 毕业论文模板
 \begin{document}
     \maketitle                              % 封面
+    \newpage
     \authorization                          % 原创页（不保密）
     % \authorization[x]                     % 原创页（保密 x 年）
     
@@ -30,10 +27,11 @@
     \tableofcontents                        % 目录
     \newpage
     \pagenumbering{arabic}
-    \include{body/chapter1}                 % 正文
-    \include{body/chapter2}
-    \include{body/chapter3}
-
+    \include{body/introduction}                 % 正文
+    \include{body/related_works}
+    \include{body/method}
+    \include{body/experiments}
+    \include{body/conclusion}
     
     \include{body/acknowledgement}          % 致谢
     \include{body/references}               % 参考文献
@@ -41,18 +39,3 @@
     % \include{body/appendices}
 
 \end{document}
-
-% 翻译/开题报告模板
-% \begin{document}
-%     \maketitle                              % 封面
-%     \input{body/chapter1}                   % 正文
-%     \input{body/chapter2}
-%     \input{body/chapter3}
-%     \input{body/chapter4}
-%     \input{body/chapter5}
-%     \input{body/acknowledgement}            % 致谢
-%     \input{body/references}                 % 参考文献
-%     \appendix                               % 附录
-%     \input{body/appendices}
-%     % \originalart{pdf/ori.pdf}             % 文献翻译插入原文
-% \end{document}
