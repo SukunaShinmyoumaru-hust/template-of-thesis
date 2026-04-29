@@ -80,9 +80,11 @@
 }
 
 % 致谢标题
-\newcommand{\acknowledgement}{\sectionUnnumbered{\ifdefstring
-    {\HGP@mode}{thesis}{致\hspace{1em}谢}{致谢}
-}}
+\newcommand{\acknowledgement}{
+    \ifdefstring{\HGP@mode}
+        {thesis}{\sectionUnnumbered{致\hspace{1em}谢}}
+        {致谢}
+}
 
 % 文献翻译结尾插入原文
 \newcommand{\originalart}[1]{
