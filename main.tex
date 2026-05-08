@@ -1,3 +1,4 @@
+\PassOptionsToPackage{gbnamefmt=lowercase}{biblatex}
 \documentclass[thesis,biblatex]{template/hust}
 
 \addbibresource{ref.bib}
@@ -17,6 +18,10 @@
 % 毕业论文模板
 \begin{document}
     \maketitle                              % 封面
+    \clearpage
+    \thispagestyle{empty}
+    \null
+    \clearpage
     \newpage
     \authorization                          % 原创页（不保密）
     % \authorization[x]                     % 原创页（保密 x 年）
@@ -33,9 +38,9 @@
     \include{body/experiments}
     \include{body/conclusion}
     
-    \include{body/acknowledgement}          % 致谢
     \include{body/references}               % 参考文献
     % \appendix                               % 附录
     % \include{body/appendices}
+    \include{body/acknowledgement}          % 致谢
 
 \end{document}
