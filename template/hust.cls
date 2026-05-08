@@ -347,8 +347,9 @@
 
 %====================== 算法 ======================%
 \floatname{algorithm}{算法}
-\renewcommand{\algorithmicrequire}{\textbf{Input: }}
-\renewcommand{\algorithmicensure}{\textbf{Output: }}
+\renewcommand{\ALG@name}{算法}
+\renewcommand{\algorithmicrequire}{\textbf{输入：}}
+\renewcommand{\algorithmicensure}{\textbf{输出：}}
 
 \AtBeginEnvironment{algorithmic}{\vspace{3pt}\setstretch{1.3}}
 \AtEndEnvironment{algorithmic}{\vspace{3pt}}
