@@ -237,7 +237,7 @@
 \def\theoremautorefname{定理}
 
 \newcommand{\HGP@newtheorem}[2]{
-    \newtheorem{#1}[theorem]{#2}    % 创建定理环境
+    \newtheorem{#1}{#2}    % 创建定理环境（独立编号）
     % \HGP@setcounter{#1}             % 按章编号
     \expandafter\def\csname #1autorefname\endcsname{#2} % autoref
 }
